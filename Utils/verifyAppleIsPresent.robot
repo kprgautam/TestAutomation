@@ -16,7 +16,8 @@ Verify Desired Item Is Present And Its Quanity
     ${count}    Get Element Count       ${itemname}     #Gets count of the searched product
     Log To Console And Capture Screenshot     There are ${count} ${textofSearchedItem} products in this page.
 
-    ELEMENT SHOULD CONTAIN           ${itemname}         ${textofSearchedItem} #Checks if searched item contains the items on page
+    #Checks if searched item contains the items on page
+    ELEMENT SHOULD CONTAIN           ${itemname}      ${textofSearchedItem}
     Log To Console And Capture Screenshot                Only $${textofSearchedItem} Products are available.
 
 
