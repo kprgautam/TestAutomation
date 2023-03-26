@@ -1,5 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
+Library     Screenshot
 
 *** Variables ***
 ${url}                  https://salaryhero-qa-challenge.herokuapp.com/#/
@@ -36,7 +37,8 @@ Log To Console And Capture Screenshot           #Logs message to console and tak
     [Arguments]  ${textToAssert}
     LOG TO CONSOLE              ${textToAssert}
     ${time}=        Get Time    format=%H:%M:%S:%MS
-    capture page screenshot     Screenshot_${time}.png
+    capture page screenshot     /Users/kprgautam/PycharmProjects/TestAutomation/venv/Attachments/Screenshot_${time}.png
+
 
 Move To Cart
     WAIT AND CLICK      ${movetobasket}
