@@ -21,10 +21,10 @@ Test Case 1: Add 1 item to the basket.
     [Tags]  Salary Hero QA Challenge
        Login To The Website                                         #Logs into the website
        Move To Cart                                                 #Moves into the logged in user's basket
-            Skip If Empty           Clear Cart                      #Checks the cart for any existing items and deletes them, if not items are available then redirects to Homepage
+            Skip If Empty           Clear Cart                      #Checks the cart for any existing items and deletes them, if no items are available then redirects to Homepage
        Move To Address Book                                         ##Moves into the logged in user's address book
-            Skip If Empty           Clear Address Book              #Checks the addres book for any existing items and deletes them, if not items are available then redirects to Homepage
-       Add Item(s) To Cart        1                               #Adds the number of items specified
+            Skip If Empty           Clear Address Book              #Checks the addres book for any existing items and deletes them, if no items are available then redirects to Homepage
+       Add Item(s) To Cart        1                                 #Adds the number of items specified
        Add New Address                                              #Adds a new address
        Select Address                                               #Selects the added address
        Select Delivery                                              #Selects the delivery
@@ -33,10 +33,10 @@ Test Case 2: Add 2 items to the basket.
     [Tags]  Salary Hero QA Challenge
        Login To The Website                                         #Logs into the website
        Move To Cart                                                 #Moves into the logged in user's basket
-            Skip If Empty           Clear Cart                      #Checks the cart for any existing items and deletes them, if not items are available then redirects to Homepage
+            Skip If Empty           Clear Cart                      #Checks the cart for any existing items and deletes them, if no items are available then redirects to Homepage
        Move To Address Book                                         ##Moves into the logged in user's address book
-            Skip If Empty           Clear Address Book              #Checks the addres book for any existing items and deletes them, if not items are available then redirects to Homepage
-       Add Item(s) To Cart        2                               #Adds the number of items specified
+            Skip If Empty           Clear Address Book              #Checks the addres book for any existing items and deletes them, if no items are available then redirects to Homepage
+       Add Item(s) To Cart        2                                 #Adds the number of items specified
        Add New Address                                              #Adds a new address
        Select Address                                               #Selects the added address
        Select Delivery                                              #Selects the delivery
