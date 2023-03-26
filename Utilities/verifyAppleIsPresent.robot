@@ -18,7 +18,7 @@ Verify Desired Item Is Present And Its Quanity
 
     #Checks if searched item contains the items on page
     ELEMENT SHOULD CONTAIN           ${itemname}      ${textofSearchedItem}
-    Log To Console And Capture Screenshot                Only $${textofSearchedItem} Products are available.
+    Log To Console And Capture Screenshot                Only ${textofSearchedItem} Products are available.
 
 
 Verify Undesired Product Is Not Present
