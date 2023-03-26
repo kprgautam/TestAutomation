@@ -9,6 +9,6 @@ ${searchButton}     //mat-icon[normalize-space()='search']
 Search For
     [Arguments]  ${itemName}
     Wait and Click          ${searchButton}
-    PRESS KEYS              ${None}     ${itemName}
+    PRESS KEYS              ${None}     ${itemName}     #Using keyboard keys to search for desired word
     PRESS KEYS              ${None}     ENTER
 
