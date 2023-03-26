@@ -3,8 +3,8 @@ Library     Selenium2Library
 Resource  ../../Utils/Resources.robot
 
 *** Variables ***
-${email}                qachallengesalaryhero@sh.com
-${password}             QASalaryHero
+${email}                qachallenge@salaryhero.com
+${password}             QAChallenge
 ${account}              //span[normalize-space()='Account']
 ${getToLogin}           //button[@id='navbarLoginButton']//span[contains(text(),'Login')]
 ${emailBox}             //input[@id='email']

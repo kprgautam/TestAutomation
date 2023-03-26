@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on darwin)" generated="20230326 01:18:56.042" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.2 on darwin)" generated="20230326 14:16:12.412" rpa="false" schemaversion="3">
 <suite id="s1" name="TestCases" source="/Users/kprgautam/PycharmProjects/TestAutomation/Testing/TestCases.robot">
 <test id="s1-t1" name="Test Case 1: Add 1 item to the basket." line="21">
 <kw name="startTest" library="Resources" type="SETUP">
@@ -7,55 +7,54 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230326 01:18:56.172" level="INFO">Opening browser 'firefox' to base url 'https://salaryhero-qa-challenge.herokuapp.com/#/'.</msg>
-<msg timestamp="20230326 01:18:56.173" level="INFO">Firefox driver log is always forced to to: /Users/kprgautam/PycharmProjects/TestAutomation/geckodriver-15.log</msg>
-<status status="PASS" starttime="20230326 01:18:56.172" endtime="20230326 01:19:09.640"/>
+<msg timestamp="20230326 14:16:12.612" level="INFO">Opening browser 'chrome' to base url 'https://salaryhero-qa-challenge.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20230326 14:16:12.611" endtime="20230326 14:16:20.588"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230326 01:19:09.641" endtime="20230326 01:19:10.118"/>
+<status status="PASS" starttime="20230326 14:16:20.589" endtime="20230326 14:16:21.015"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${dismiss}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:10.119" endtime="20230326 01:19:10.130"/>
+<status status="PASS" starttime="20230326 14:16:21.017" endtime="20230326 14:16:21.029"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:10.130" endtime="20230326 01:19:10.393"/>
+<status status="PASS" starttime="20230326 14:16:21.029" endtime="20230326 14:16:21.304"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:10.394" level="INFO">Clicking element '//span[normalize-space()='Dismiss']'.</msg>
-<status status="PASS" starttime="20230326 01:19:10.393" endtime="20230326 01:19:10.619"/>
+<msg timestamp="20230326 14:16:21.305" level="INFO">Clicking element '//span[normalize-space()='Dismiss']'.</msg>
+<status status="PASS" starttime="20230326 14:16:21.304" endtime="20230326 14:16:21.348"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:10.119" endtime="20230326 01:19:10.620"/>
+<status status="PASS" starttime="20230326 14:16:21.016" endtime="20230326 14:16:21.348"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${cookieDismiss}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:10.620" endtime="20230326 01:19:10.623"/>
+<status status="PASS" starttime="20230326 14:16:21.349" endtime="20230326 14:16:21.357"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:10.623" endtime="20230326 01:19:10.884"/>
+<status status="PASS" starttime="20230326 14:16:21.357" endtime="20230326 14:16:21.632"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:10.885" level="INFO">Clicking element '//a[@aria-label='dismiss cookie message']'.</msg>
-<status status="PASS" starttime="20230326 01:19:10.885" endtime="20230326 01:19:11.098"/>
+<msg timestamp="20230326 14:16:21.634" level="INFO">Clicking element '//a[@aria-label='dismiss cookie message']'.</msg>
+<status status="PASS" starttime="20230326 14:16:21.633" endtime="20230326 14:16:21.670"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:10.620" endtime="20230326 01:19:11.098"/>
+<status status="PASS" starttime="20230326 14:16:21.349" endtime="20230326 14:16:21.670"/>
 </kw>
-<status status="PASS" starttime="20230326 01:18:56.171" endtime="20230326 01:19:11.098"/>
+<status status="PASS" starttime="20230326 14:16:12.611" endtime="20230326 14:16:21.670"/>
 </kw>
 <kw name="Login To The Website" library="loginWebsite">
 <kw name="Wait and Click" library="Resources">
@@ -63,40 +62,40 @@
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:11.100" endtime="20230326 01:19:11.105"/>
+<status status="PASS" starttime="20230326 14:16:21.670" endtime="20230326 14:16:21.679"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:11.105" endtime="20230326 01:19:11.370"/>
+<status status="PASS" starttime="20230326 14:16:21.679" endtime="20230326 14:16:21.949"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:11.371" level="INFO">Clicking element '//span[normalize-space()='Account']'.</msg>
-<status status="PASS" starttime="20230326 01:19:11.371" endtime="20230326 01:19:11.604"/>
+<msg timestamp="20230326 14:16:21.950" level="INFO">Clicking element '//span[normalize-space()='Account']'.</msg>
+<status status="PASS" starttime="20230326 14:16:21.949" endtime="20230326 14:16:21.985"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:11.099" endtime="20230326 01:19:11.604"/>
+<status status="PASS" starttime="20230326 14:16:21.670" endtime="20230326 14:16:21.985"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${getToLogin}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:11.604" endtime="20230326 01:19:11.608"/>
+<status status="PASS" starttime="20230326 14:16:21.985" endtime="20230326 14:16:21.993"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:11.608" endtime="20230326 01:19:11.869"/>
+<status status="PASS" starttime="20230326 14:16:21.993" endtime="20230326 14:16:22.266"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:11.870" level="INFO">Clicking element '//button[@id='navbarLoginButton']//span[contains(text(),'Login')]'.</msg>
-<status status="PASS" starttime="20230326 01:19:11.869" endtime="20230326 01:19:12.178"/>
+<msg timestamp="20230326 14:16:22.267" level="INFO">Clicking element '//button[@id='navbarLoginButton']//span[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20230326 14:16:22.266" endtime="20230326 14:16:22.345"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:11.604" endtime="20230326 01:19:12.178"/>
+<status status="PASS" starttime="20230326 14:16:21.985" endtime="20230326 14:16:22.345"/>
 </kw>
 <kw name="Clear and Input" library="Resources">
 <arg>${emailBox}</arg>
@@ -104,21 +103,21 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:12.178" endtime="20230326 01:19:12.456"/>
+<status status="PASS" starttime="20230326 14:16:22.345" endtime="20230326 14:16:22.616"/>
 </kw>
 <kw name="Clear Element Text" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230326 01:19:12.456" endtime="20230326 01:19:12.501"/>
+<status status="PASS" starttime="20230326 14:16:22.616" endtime="20230326 14:16:22.649"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${locator}</arg>
 <arg>${texttoenter}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:12.501" level="INFO">Typing text 'qachallengesalaryhero@sh.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20230326 01:19:12.501" endtime="20230326 01:19:12.546"/>
+<msg timestamp="20230326 14:16:22.650" level="INFO">Typing text 'qachallengesalaryhero@sh.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20230326 14:16:22.649" endtime="20230326 14:16:22.827"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:12.178" endtime="20230326 01:19:12.546"/>
+<status status="PASS" starttime="20230326 14:16:22.345" endtime="20230326 14:16:22.827"/>
 </kw>
 <kw name="Clear and Input" library="Resources">
 <arg>${passwordBox}</arg>
@@ -126,255 +125,99 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:12.547" endtime="20230326 01:19:12.807"/>
+<status status="PASS" starttime="20230326 14:16:22.827" endtime="20230326 14:16:23.098"/>
 </kw>
 <kw name="Clear Element Text" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230326 01:19:12.808" endtime="20230326 01:19:12.824"/>
+<status status="PASS" starttime="20230326 14:16:23.098" endtime="20230326 14:16:23.134"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${locator}</arg>
 <arg>${texttoenter}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:12.825" level="INFO">Typing text 'QASalaryHero' into text field '//input[@id='password']'.</msg>
-<status status="PASS" starttime="20230326 01:19:12.825" endtime="20230326 01:19:12.855"/>
+<msg timestamp="20230326 14:16:23.135" level="INFO">Typing text 'QASalaryHero' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20230326 14:16:23.134" endtime="20230326 14:16:23.193"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:12.546" endtime="20230326 01:19:12.855"/>
+<status status="PASS" starttime="20230326 14:16:22.827" endtime="20230326 14:16:23.193"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${login}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:12.855" endtime="20230326 01:19:12.857"/>
+<status status="PASS" starttime="20230326 14:16:23.193" endtime="20230326 14:16:23.202"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:12.857" endtime="20230326 01:19:13.117"/>
+<status status="PASS" starttime="20230326 14:16:23.202" endtime="20230326 14:16:23.466"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:13.119" level="INFO">Clicking element '//button[@id='loginButton']//span[@class='mat-button-wrapper']'.</msg>
-<status status="PASS" starttime="20230326 01:19:13.118" endtime="20230326 01:19:13.337"/>
+<msg timestamp="20230326 14:16:23.467" level="INFO">Clicking element '//button[@id='loginButton']//span[@class='mat-button-wrapper']'.</msg>
+<status status="PASS" starttime="20230326 14:16:23.466" endtime="20230326 14:16:23.516"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:12.855" endtime="20230326 01:19:13.337"/>
+<status status="PASS" starttime="20230326 14:16:23.193" endtime="20230326 14:16:23.516"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${basketAssert}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:13.337" endtime="20230326 01:19:13.545"/>
+<msg timestamp="20230326 14:16:28.904" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230326 14:16:28.904" level="FAIL">Element '//span[normalize-space()='Your Basket']' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20230326 14:16:23.516" endtime="20230326 14:16:28.907"/>
 </kw>
 <kw name="Log To Console And Capture Screenshot" library="Resources">
 <arg>"Login Successful"</arg>
+<status status="NOT RUN" starttime="20230326 14:16:28.907" endtime="20230326 14:16:28.907"/>
+</kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${textToAssert}</arg>
+<arg>"Let us proceed further."</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230326 01:19:13.546" endtime="20230326 01:19:13.546"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.907" endtime="20230326 14:16:28.907"/>
 </kw>
-<kw name="Get Time" library="BuiltIn">
-<var>${time}</var>
-<arg>format=%H:%M:%S:%MS</arg>
-<doc>Returns the given time in the requested format.</doc>
-<msg timestamp="20230326 01:19:13.546" level="INFO">${time} = 2023-03-26 01:19:13</msg>
-<status status="PASS" starttime="20230326 01:19:13.546" endtime="20230326 01:19:13.546"/>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<arg>Screenshot_${time}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230326 01:19:13.631" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot_2023-03-26%2001%3A19%3A13.png"&gt;&lt;img src="Screenshot_2023-03-26%2001%3A19%3A13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230326 01:19:13.546" endtime="20230326 01:19:13.631"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:13.545" endtime="20230326 01:19:13.631"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:11.099" endtime="20230326 01:19:13.631"/>
+<status status="FAIL" starttime="20230326 14:16:21.670" endtime="20230326 14:16:28.907"/>
 </kw>
 <kw name="Move To Cart" library="Resources">
-<kw name="Wait and Click" library="Resources">
-<arg>${movetobasket}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:13.632" endtime="20230326 01:19:13.634"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:13.634" endtime="20230326 01:19:13.894"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:13.894" level="INFO">Clicking element '//span[normalize-space()='Your Basket']'.</msg>
-<status status="PASS" starttime="20230326 01:19:13.894" endtime="20230326 01:19:14.133"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:13.631" endtime="20230326 01:19:14.133"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:13.631" endtime="20230326 01:19:14.133"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.907" endtime="20230326 14:16:28.907"/>
 </kw>
 <kw name="Skip If Empty" library="skipIf">
 <arg>Clear Cart</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>0.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230326 01:19:14.636" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20230326 01:19:14.134" endtime="20230326 01:19:14.636"/>
-</kw>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${IsElementVisible}</var>
-<arg>Element Should Be Visible</arg>
-<arg>${deleteButton}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<arg>${deleteButton}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230326 01:19:14.736" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-313.png"&gt;&lt;img src="selenium-screenshot-313.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230326 01:19:14.736" level="FAIL">Element with locator '//button[@class='mat-focus-indicator mat-icon-button mat-button-base']' not found.</msg>
-<status status="FAIL" starttime="20230326 01:19:14.638" endtime="20230326 01:19:14.739"/>
-</kw>
-<msg timestamp="20230326 01:19:14.739" level="INFO">${IsElementVisible} = False</msg>
-<status status="PASS" starttime="20230326 01:19:14.637" endtime="20230326 01:19:14.739"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>${IsElementVisible}</arg>
-<arg>${KeywordName}</arg>
-<arg>ELSE</arg>
-<arg>Log To Console</arg>
-<arg>"Section Is Empty. No items to clear."</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Log To Console" library="BuiltIn">
-<arg>"Section Is Empty. No items to clear."</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230326 01:19:14.740" endtime="20230326 01:19:14.740"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:14.740" endtime="20230326 01:19:14.740"/>
-</kw>
-<kw name="Return Home" library="Resources">
-<kw name="Wait and Click" library="Resources">
-<arg>${headerbutton}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:14.740" endtime="20230326 01:19:14.742"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:14.742" endtime="20230326 01:19:14.999"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:15.001" level="INFO">Clicking element '//span[@class='mat-button-wrapper']//span[contains(text(),'OWASP Juice Shop')]'.</msg>
-<status status="PASS" starttime="20230326 01:19:15.000" endtime="20230326 01:19:15.245"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:14.740" endtime="20230326 01:19:15.245"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:14.740" endtime="20230326 01:19:15.245"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:14.133" endtime="20230326 01:19:15.246"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.907" endtime="20230326 14:16:28.907"/>
 </kw>
 <kw name="Move To Address Book" library="clearAddressBook">
-<kw name="Wait and Click" library="Resources">
-<arg>${accountButton}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:15.247" endtime="20230326 01:19:15.251"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:15.252" endtime="20230326 01:19:15.527"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:15.527" level="INFO">Clicking element '(//span[normalize-space()='Account'])[1]'.</msg>
-<status status="PASS" starttime="20230326 01:19:15.527" endtime="20230326 01:19:15.758"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:15.247" endtime="20230326 01:19:15.758"/>
-</kw>
-<kw name="Wait and Click" library="Resources">
-<arg>${OPButton}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:15.759" endtime="20230326 01:19:15.762"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:15.762" endtime="20230326 01:19:16.024"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:16.025" level="INFO">Clicking element '//button[@aria-label='Show Orders and Payment Menu']//span[contains(text(),'Orders &amp; Payment')]'.</msg>
-<status status="PASS" starttime="20230326 01:19:16.024" endtime="20230326 01:19:16.242"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:15.759" endtime="20230326 01:19:16.242"/>
-</kw>
-<kw name="Wait and Click" library="Resources">
-<arg>${savedAddressButton}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:16.243" endtime="20230326 01:19:16.246"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:16.246" endtime="20230326 01:19:16.524"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:16.525" level="INFO">Clicking element '(//span[normalize-space()='My saved addresses'])[1]'.</msg>
-<msg timestamp="20230326 01:19:16.679" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-314.png"&gt;&lt;img src="selenium-screenshot-314.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230326 01:19:16.679" level="FAIL">Element with locator '(//span[normalize-space()='My saved addresses'])[1]' not found.</msg>
-<status status="FAIL" starttime="20230326 01:19:16.524" endtime="20230326 01:19:16.680"/>
-</kw>
-<status status="FAIL" starttime="20230326 01:19:16.242" endtime="20230326 01:19:16.680"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230326 01:19:16.680" endtime="20230326 01:19:16.680"/>
-</kw>
-<status status="FAIL" starttime="20230326 01:19:15.246" endtime="20230326 01:19:16.680"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.907" endtime="20230326 14:16:28.907"/>
 </kw>
 <kw name="Skip If Empty" library="skipIf">
 <arg>Clear Address Book</arg>
-<status status="NOT RUN" starttime="20230326 01:19:16.680" endtime="20230326 01:19:16.680"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.907" endtime="20230326 14:16:28.907"/>
 </kw>
 <kw name="Add Item(s) To Basket" library="addItemToBasket">
 <arg>1</arg>
-<status status="NOT RUN" starttime="20230326 01:19:16.680" endtime="20230326 01:19:16.680"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.907" endtime="20230326 14:16:28.907"/>
 </kw>
 <kw name="Click Checkout" library="checkout">
-<status status="NOT RUN" starttime="20230326 01:19:16.680" endtime="20230326 01:19:16.680"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.908" endtime="20230326 14:16:28.908"/>
 </kw>
 <kw name="Add New Address" library="address">
-<status status="NOT RUN" starttime="20230326 01:19:16.680" endtime="20230326 01:19:16.680"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.908" endtime="20230326 14:16:28.908"/>
 </kw>
 <kw name="Select Address" library="address">
-<status status="NOT RUN" starttime="20230326 01:19:16.680" endtime="20230326 01:19:16.680"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.908" endtime="20230326 14:16:28.908"/>
 </kw>
 <kw name="Select Delivery" library="delivery">
-<status status="NOT RUN" starttime="20230326 01:19:16.680" endtime="20230326 01:19:16.680"/>
+<status status="NOT RUN" starttime="20230326 14:16:28.908" endtime="20230326 14:16:28.908"/>
 </kw>
 <kw name="closeTest" library="Resources" type="TEARDOWN">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230326 01:19:16.681" endtime="20230326 01:19:17.159"/>
+<status status="PASS" starttime="20230326 14:16:28.908" endtime="20230326 14:16:28.981"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:16.681" endtime="20230326 01:19:17.159"/>
+<status status="PASS" starttime="20230326 14:16:28.908" endtime="20230326 14:16:28.982"/>
 </kw>
 <tag>Salary Hero QA Challenge</tag>
-<status status="FAIL" starttime="20230326 01:18:56.171" endtime="20230326 01:19:17.159">Element with locator '(//span[normalize-space()='My saved addresses'])[1]' not found.</status>
+<status status="FAIL" starttime="20230326 14:16:12.611" endtime="20230326 14:16:28.982">Element '//span[normalize-space()='Your Basket']' did not appear in 5 seconds.</status>
 </test>
 <test id="s1-t2" name="Test Case 2: Add 2 items to the basket." line="34">
 <kw name="startTest" library="Resources" type="SETUP">
@@ -382,55 +225,54 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230326 01:19:17.160" level="INFO">Opening browser 'firefox' to base url 'https://salaryhero-qa-challenge.herokuapp.com/#/'.</msg>
-<msg timestamp="20230326 01:19:17.160" level="INFO">Firefox driver log is always forced to to: /Users/kprgautam/PycharmProjects/TestAutomation/geckodriver-16.log</msg>
-<status status="PASS" starttime="20230326 01:19:17.160" endtime="20230326 01:19:23.739"/>
+<msg timestamp="20230326 14:16:28.983" level="INFO">Opening browser 'chrome' to base url 'https://salaryhero-qa-challenge.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20230326 14:16:28.982" endtime="20230326 14:16:36.625"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230326 01:19:23.739" endtime="20230326 01:19:24.217"/>
+<status status="PASS" starttime="20230326 14:16:36.625" endtime="20230326 14:16:37.036"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${dismiss}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:24.218" endtime="20230326 01:19:24.232"/>
+<status status="PASS" starttime="20230326 14:16:37.036" endtime="20230326 14:16:37.045"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:24.233" endtime="20230326 01:19:24.503"/>
+<status status="PASS" starttime="20230326 14:16:37.045" endtime="20230326 14:16:37.315"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:24.504" level="INFO">Clicking element '//span[normalize-space()='Dismiss']'.</msg>
-<status status="PASS" starttime="20230326 01:19:24.504" endtime="20230326 01:19:24.730"/>
+<msg timestamp="20230326 14:16:37.316" level="INFO">Clicking element '//span[normalize-space()='Dismiss']'.</msg>
+<status status="PASS" starttime="20230326 14:16:37.315" endtime="20230326 14:16:37.358"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:24.217" endtime="20230326 01:19:24.730"/>
+<status status="PASS" starttime="20230326 14:16:37.036" endtime="20230326 14:16:37.358"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${cookieDismiss}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:24.731" endtime="20230326 01:19:24.735"/>
+<status status="PASS" starttime="20230326 14:16:37.358" endtime="20230326 14:16:37.366"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:24.735" endtime="20230326 01:19:25.002"/>
+<status status="PASS" starttime="20230326 14:16:37.366" endtime="20230326 14:16:37.630"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:25.003" level="INFO">Clicking element '//a[@aria-label='dismiss cookie message']'.</msg>
-<status status="PASS" starttime="20230326 01:19:25.002" endtime="20230326 01:19:25.216"/>
+<msg timestamp="20230326 14:16:37.631" level="INFO">Clicking element '//a[@aria-label='dismiss cookie message']'.</msg>
+<status status="PASS" starttime="20230326 14:16:37.630" endtime="20230326 14:16:37.667"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:24.730" endtime="20230326 01:19:25.216"/>
+<status status="PASS" starttime="20230326 14:16:37.358" endtime="20230326 14:16:37.667"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:17.159" endtime="20230326 01:19:25.216"/>
+<status status="PASS" starttime="20230326 14:16:28.982" endtime="20230326 14:16:37.667"/>
 </kw>
 <kw name="Login To The Website" library="loginWebsite">
 <kw name="Wait and Click" library="Resources">
@@ -438,40 +280,40 @@
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:25.218" endtime="20230326 01:19:25.222"/>
+<status status="PASS" starttime="20230326 14:16:37.668" endtime="20230326 14:16:37.676"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:25.222" endtime="20230326 01:19:25.492"/>
+<status status="PASS" starttime="20230326 14:16:37.676" endtime="20230326 14:16:37.949"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:25.493" level="INFO">Clicking element '//span[normalize-space()='Account']'.</msg>
-<status status="PASS" starttime="20230326 01:19:25.492" endtime="20230326 01:19:25.720"/>
+<msg timestamp="20230326 14:16:37.951" level="INFO">Clicking element '//span[normalize-space()='Account']'.</msg>
+<status status="PASS" starttime="20230326 14:16:37.950" endtime="20230326 14:16:37.995"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:25.217" endtime="20230326 01:19:25.720"/>
+<status status="PASS" starttime="20230326 14:16:37.667" endtime="20230326 14:16:37.995"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${getToLogin}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:25.722" endtime="20230326 01:19:25.725"/>
+<status status="PASS" starttime="20230326 14:16:37.996" endtime="20230326 14:16:38.003"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:25.725" endtime="20230326 01:19:25.985"/>
+<status status="PASS" starttime="20230326 14:16:38.004" endtime="20230326 14:16:38.282"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:25.986" level="INFO">Clicking element '//button[@id='navbarLoginButton']//span[contains(text(),'Login')]'.</msg>
-<status status="PASS" starttime="20230326 01:19:25.986" endtime="20230326 01:19:26.292"/>
+<msg timestamp="20230326 14:16:38.287" level="INFO">Clicking element '//button[@id='navbarLoginButton']//span[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20230326 14:16:38.283" endtime="20230326 14:16:38.373"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:25.720" endtime="20230326 01:19:26.292"/>
+<status status="PASS" starttime="20230326 14:16:37.995" endtime="20230326 14:16:38.373"/>
 </kw>
 <kw name="Clear and Input" library="Resources">
 <arg>${emailBox}</arg>
@@ -479,21 +321,21 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:26.293" endtime="20230326 01:19:26.568"/>
+<status status="PASS" starttime="20230326 14:16:38.373" endtime="20230326 14:16:38.651"/>
 </kw>
 <kw name="Clear Element Text" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230326 01:19:26.568" endtime="20230326 01:19:26.577"/>
+<status status="PASS" starttime="20230326 14:16:38.651" endtime="20230326 14:16:38.688"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${locator}</arg>
 <arg>${texttoenter}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:26.578" level="INFO">Typing text 'qachallengesalaryhero@sh.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20230326 01:19:26.577" endtime="20230326 01:19:26.636"/>
+<msg timestamp="20230326 14:16:38.688" level="INFO">Typing text 'qachallengesalaryhero@sh.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20230326 14:16:38.688" endtime="20230326 14:16:38.839"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:26.292" endtime="20230326 01:19:26.637"/>
+<status status="PASS" starttime="20230326 14:16:38.373" endtime="20230326 14:16:38.839"/>
 </kw>
 <kw name="Clear and Input" library="Resources">
 <arg>${passwordBox}</arg>
@@ -501,255 +343,99 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:26.637" endtime="20230326 01:19:26.936"/>
+<status status="PASS" starttime="20230326 14:16:38.839" endtime="20230326 14:16:39.118"/>
 </kw>
 <kw name="Clear Element Text" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230326 01:19:26.936" endtime="20230326 01:19:26.945"/>
+<status status="PASS" starttime="20230326 14:16:39.118" endtime="20230326 14:16:39.155"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${locator}</arg>
 <arg>${texttoenter}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:26.945" level="INFO">Typing text 'QASalaryHero' into text field '//input[@id='password']'.</msg>
-<status status="PASS" starttime="20230326 01:19:26.945" endtime="20230326 01:19:26.970"/>
+<msg timestamp="20230326 14:16:39.155" level="INFO">Typing text 'QASalaryHero' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20230326 14:16:39.155" endtime="20230326 14:16:39.211"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:26.637" endtime="20230326 01:19:26.970"/>
+<status status="PASS" starttime="20230326 14:16:38.839" endtime="20230326 14:16:39.211"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${login}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:26.970" endtime="20230326 01:19:26.972"/>
+<status status="PASS" starttime="20230326 14:16:39.211" endtime="20230326 14:16:39.218"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:26.972" endtime="20230326 01:19:27.226"/>
+<status status="PASS" starttime="20230326 14:16:39.218" endtime="20230326 14:16:39.483"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:27.227" level="INFO">Clicking element '//button[@id='loginButton']//span[@class='mat-button-wrapper']'.</msg>
-<status status="PASS" starttime="20230326 01:19:27.226" endtime="20230326 01:19:27.446"/>
+<msg timestamp="20230326 14:16:39.484" level="INFO">Clicking element '//button[@id='loginButton']//span[@class='mat-button-wrapper']'.</msg>
+<status status="PASS" starttime="20230326 14:16:39.483" endtime="20230326 14:16:39.533"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:26.970" endtime="20230326 01:19:27.446"/>
+<status status="PASS" starttime="20230326 14:16:39.211" endtime="20230326 14:16:39.533"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${basketAssert}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:27.446" endtime="20230326 01:19:27.661"/>
+<msg timestamp="20230326 14:16:44.901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230326 14:16:44.901" level="FAIL">Element '//span[normalize-space()='Your Basket']' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20230326 14:16:39.533" endtime="20230326 14:16:44.902"/>
 </kw>
 <kw name="Log To Console And Capture Screenshot" library="Resources">
 <arg>"Login Successful"</arg>
+<status status="NOT RUN" starttime="20230326 14:16:44.902" endtime="20230326 14:16:44.902"/>
+</kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${textToAssert}</arg>
+<arg>"Let us proceed further."</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230326 01:19:27.662" endtime="20230326 01:19:27.663"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.902" endtime="20230326 14:16:44.902"/>
 </kw>
-<kw name="Get Time" library="BuiltIn">
-<var>${time}</var>
-<arg>format=%H:%M:%S:%MS</arg>
-<doc>Returns the given time in the requested format.</doc>
-<msg timestamp="20230326 01:19:27.663" level="INFO">${time} = 2023-03-26 01:19:27</msg>
-<status status="PASS" starttime="20230326 01:19:27.663" endtime="20230326 01:19:27.663"/>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<arg>Screenshot_${time}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230326 01:19:27.753" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot_2023-03-26%2001%3A19%3A27.png"&gt;&lt;img src="Screenshot_2023-03-26%2001%3A19%3A27.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230326 01:19:27.663" endtime="20230326 01:19:27.753"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:27.662" endtime="20230326 01:19:27.753"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:25.217" endtime="20230326 01:19:27.753"/>
+<status status="FAIL" starttime="20230326 14:16:37.667" endtime="20230326 14:16:44.902"/>
 </kw>
 <kw name="Move To Cart" library="Resources">
-<kw name="Wait and Click" library="Resources">
-<arg>${movetobasket}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:27.753" endtime="20230326 01:19:27.817"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:27.817" endtime="20230326 01:19:28.077"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:28.077" level="INFO">Clicking element '//span[normalize-space()='Your Basket']'.</msg>
-<status status="PASS" starttime="20230326 01:19:28.077" endtime="20230326 01:19:28.317"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:27.753" endtime="20230326 01:19:28.317"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:27.753" endtime="20230326 01:19:28.317"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.902" endtime="20230326 14:16:44.902"/>
 </kw>
 <kw name="Skip If Empty" library="skipIf">
 <arg>Clear Cart</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>0.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230326 01:19:28.819" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20230326 01:19:28.318" endtime="20230326 01:19:28.819"/>
-</kw>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${IsElementVisible}</var>
-<arg>Element Should Be Visible</arg>
-<arg>${deleteButton}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<arg>${deleteButton}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230326 01:19:28.921" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-315.png"&gt;&lt;img src="selenium-screenshot-315.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230326 01:19:28.921" level="FAIL">Element with locator '//button[@class='mat-focus-indicator mat-icon-button mat-button-base']' not found.</msg>
-<status status="FAIL" starttime="20230326 01:19:28.820" endtime="20230326 01:19:28.921"/>
-</kw>
-<msg timestamp="20230326 01:19:28.921" level="INFO">${IsElementVisible} = False</msg>
-<status status="PASS" starttime="20230326 01:19:28.820" endtime="20230326 01:19:28.921"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>${IsElementVisible}</arg>
-<arg>${KeywordName}</arg>
-<arg>ELSE</arg>
-<arg>Log To Console</arg>
-<arg>"Section Is Empty. No items to clear."</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Log To Console" library="BuiltIn">
-<arg>"Section Is Empty. No items to clear."</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230326 01:19:28.922" endtime="20230326 01:19:28.922"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:28.921" endtime="20230326 01:19:28.922"/>
-</kw>
-<kw name="Return Home" library="Resources">
-<kw name="Wait and Click" library="Resources">
-<arg>${headerbutton}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:28.922" endtime="20230326 01:19:28.924"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:28.924" endtime="20230326 01:19:29.184"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:29.186" level="INFO">Clicking element '//span[@class='mat-button-wrapper']//span[contains(text(),'OWASP Juice Shop')]'.</msg>
-<status status="PASS" starttime="20230326 01:19:29.184" endtime="20230326 01:19:29.428"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:28.922" endtime="20230326 01:19:29.428"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:28.922" endtime="20230326 01:19:29.429"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:28.318" endtime="20230326 01:19:29.429"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.902" endtime="20230326 14:16:44.903"/>
 </kw>
 <kw name="Move To Address Book" library="clearAddressBook">
-<kw name="Wait and Click" library="Resources">
-<arg>${accountButton}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:29.430" endtime="20230326 01:19:29.434"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:29.434" endtime="20230326 01:19:29.698"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:29.699" level="INFO">Clicking element '(//span[normalize-space()='Account'])[1]'.</msg>
-<status status="PASS" starttime="20230326 01:19:29.698" endtime="20230326 01:19:29.939"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:29.430" endtime="20230326 01:19:29.939"/>
-</kw>
-<kw name="Wait and Click" library="Resources">
-<arg>${OPButton}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:29.940" endtime="20230326 01:19:29.943"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:29.943" endtime="20230326 01:19:30.215"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:30.215" level="INFO">Clicking element '//button[@aria-label='Show Orders and Payment Menu']//span[contains(text(),'Orders &amp; Payment')]'.</msg>
-<status status="PASS" starttime="20230326 01:19:30.215" endtime="20230326 01:19:30.430"/>
-</kw>
-<status status="PASS" starttime="20230326 01:19:29.939" endtime="20230326 01:19:30.430"/>
-</kw>
-<kw name="Wait and Click" library="Resources">
-<arg>${savedAddressButton}</arg>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:30.431" endtime="20230326 01:19:30.435"/>
-</kw>
-<kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:30.435" endtime="20230326 01:19:30.706"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:30.707" level="INFO">Clicking element '(//span[normalize-space()='My saved addresses'])[1]'.</msg>
-<msg timestamp="20230326 01:19:30.863" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-316.png"&gt;&lt;img src="selenium-screenshot-316.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230326 01:19:30.863" level="FAIL">Element with locator '(//span[normalize-space()='My saved addresses'])[1]' not found.</msg>
-<status status="FAIL" starttime="20230326 01:19:30.706" endtime="20230326 01:19:30.864"/>
-</kw>
-<status status="FAIL" starttime="20230326 01:19:30.430" endtime="20230326 01:19:30.864"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230326 01:19:30.864" endtime="20230326 01:19:30.864"/>
-</kw>
-<status status="FAIL" starttime="20230326 01:19:29.429" endtime="20230326 01:19:30.864"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.903"/>
 </kw>
 <kw name="Skip If Empty" library="skipIf">
 <arg>Clear Address Book</arg>
-<status status="NOT RUN" starttime="20230326 01:19:30.864" endtime="20230326 01:19:30.864"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.903"/>
 </kw>
 <kw name="Add Item(s) To Basket" library="addItemToBasket">
 <arg>2</arg>
-<status status="NOT RUN" starttime="20230326 01:19:30.864" endtime="20230326 01:19:30.864"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.903"/>
 </kw>
 <kw name="Click Checkout" library="checkout">
-<status status="NOT RUN" starttime="20230326 01:19:30.864" endtime="20230326 01:19:30.864"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.903"/>
 </kw>
 <kw name="Add New Address" library="address">
-<status status="NOT RUN" starttime="20230326 01:19:30.865" endtime="20230326 01:19:30.865"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.903"/>
 </kw>
 <kw name="Select Address" library="address">
-<status status="NOT RUN" starttime="20230326 01:19:30.865" endtime="20230326 01:19:30.865"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.903"/>
 </kw>
 <kw name="Select Delivery" library="delivery">
-<status status="NOT RUN" starttime="20230326 01:19:30.865" endtime="20230326 01:19:30.865"/>
+<status status="NOT RUN" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.903"/>
 </kw>
 <kw name="closeTest" library="Resources" type="TEARDOWN">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230326 01:19:30.865" endtime="20230326 01:19:31.339"/>
+<status status="PASS" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.979"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:30.865" endtime="20230326 01:19:31.339"/>
+<status status="PASS" starttime="20230326 14:16:44.903" endtime="20230326 14:16:44.979"/>
 </kw>
 <tag>Salary Hero QA Challenge</tag>
-<status status="FAIL" starttime="20230326 01:19:17.159" endtime="20230326 01:19:31.339">Element with locator '(//span[normalize-space()='My saved addresses'])[1]' not found.</status>
+<status status="FAIL" starttime="20230326 14:16:28.982" endtime="20230326 14:16:44.979">Element '//span[normalize-space()='Your Basket']' did not appear in 5 seconds.</status>
 </test>
 <test id="s1-t3" name="Test Case 3: Search for Apple, verify that 2 Apple products show up and Banana product does not show up." line="47">
 <kw name="startTest" library="Resources" type="SETUP">
@@ -757,55 +443,54 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230326 01:19:31.340" level="INFO">Opening browser 'firefox' to base url 'https://salaryhero-qa-challenge.herokuapp.com/#/'.</msg>
-<msg timestamp="20230326 01:19:31.341" level="INFO">Firefox driver log is always forced to to: /Users/kprgautam/PycharmProjects/TestAutomation/geckodriver-17.log</msg>
-<status status="PASS" starttime="20230326 01:19:31.340" endtime="20230326 01:19:38.379"/>
+<msg timestamp="20230326 14:16:44.980" level="INFO">Opening browser 'chrome' to base url 'https://salaryhero-qa-challenge.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20230326 14:16:44.980" endtime="20230326 14:16:52.383"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230326 01:19:38.380" endtime="20230326 01:19:38.851"/>
+<status status="PASS" starttime="20230326 14:16:52.383" endtime="20230326 14:16:52.787"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${dismiss}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:38.852" endtime="20230326 01:19:38.868"/>
+<status status="PASS" starttime="20230326 14:16:52.787" endtime="20230326 14:16:52.795"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:38.868" endtime="20230326 01:19:39.137"/>
+<status status="PASS" starttime="20230326 14:16:52.795" endtime="20230326 14:16:53.066"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:39.138" level="INFO">Clicking element '//span[normalize-space()='Dismiss']'.</msg>
-<status status="PASS" starttime="20230326 01:19:39.137" endtime="20230326 01:19:39.362"/>
+<msg timestamp="20230326 14:16:53.069" level="INFO">Clicking element '//span[normalize-space()='Dismiss']'.</msg>
+<status status="PASS" starttime="20230326 14:16:53.067" endtime="20230326 14:16:53.109"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:38.852" endtime="20230326 01:19:39.362"/>
+<status status="PASS" starttime="20230326 14:16:52.787" endtime="20230326 14:16:53.109"/>
 </kw>
 <kw name="Wait and Click" library="Resources">
 <arg>${cookieDismiss}</arg>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:39.363" endtime="20230326 01:19:39.366"/>
+<status status="PASS" starttime="20230326 14:16:53.110" endtime="20230326 14:16:53.118"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:39.367" endtime="20230326 01:19:39.634"/>
+<status status="PASS" starttime="20230326 14:16:53.118" endtime="20230326 14:16:53.382"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:39.635" level="INFO">Clicking element '//a[@aria-label='dismiss cookie message']'.</msg>
-<status status="PASS" starttime="20230326 01:19:39.634" endtime="20230326 01:19:39.847"/>
+<msg timestamp="20230326 14:16:53.384" level="INFO">Clicking element '//a[@aria-label='dismiss cookie message']'.</msg>
+<status status="PASS" starttime="20230326 14:16:53.383" endtime="20230326 14:16:53.420"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:39.362" endtime="20230326 01:19:39.848"/>
+<status status="PASS" starttime="20230326 14:16:53.109" endtime="20230326 14:16:53.420"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:31.340" endtime="20230326 01:19:39.848"/>
+<status status="PASS" starttime="20230326 14:16:44.979" endtime="20230326 14:16:53.420"/>
 </kw>
 <kw name="Search For" library="searchForApple">
 <arg>Apple</arg>
@@ -814,118 +499,118 @@
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:39.849" endtime="20230326 01:19:39.853"/>
+<status status="PASS" starttime="20230326 14:16:53.421" endtime="20230326 14:16:53.429"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230326 01:19:39.853" endtime="20230326 01:19:40.128"/>
+<status status="PASS" starttime="20230326 14:16:53.429" endtime="20230326 14:16:53.701"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:40.128" level="INFO">Clicking element '//mat-icon[normalize-space()='search']'.</msg>
-<status status="PASS" starttime="20230326 01:19:40.128" endtime="20230326 01:19:40.348"/>
+<msg timestamp="20230326 14:16:53.703" level="INFO">Clicking element '//mat-icon[normalize-space()='search']'.</msg>
+<status status="PASS" starttime="20230326 14:16:53.701" endtime="20230326 14:16:53.744"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:39.849" endtime="20230326 01:19:40.348"/>
+<status status="PASS" starttime="20230326 14:16:53.421" endtime="20230326 14:16:53.744"/>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <arg>${None}</arg>
 <arg>${itemName}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20230326 01:19:40.349" level="INFO">Sending key(s) ('Apple',) to page.</msg>
-<msg timestamp="20230326 01:19:40.349" level="INFO">Sending keys Apple</msg>
-<status status="PASS" starttime="20230326 01:19:40.348" endtime="20230326 01:19:40.373"/>
+<msg timestamp="20230326 14:16:53.747" level="INFO">Sending key(s) ('Apple',) to page.</msg>
+<msg timestamp="20230326 14:16:53.747" level="INFO">Sending keys Apple</msg>
+<status status="PASS" starttime="20230326 14:16:53.744" endtime="20230326 14:16:53.824"/>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <arg>${None}</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20230326 01:19:40.373" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20230326 01:19:40.373" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20230326 01:19:40.373" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20230326 01:19:40.373" endtime="20230326 01:19:40.402"/>
+<msg timestamp="20230326 14:16:53.825" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20230326 14:16:53.825" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20230326 14:16:53.825" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230326 14:16:53.824" endtime="20230326 14:16:53.840"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:39.848" endtime="20230326 01:19:40.402"/>
+<status status="PASS" starttime="20230326 14:16:53.421" endtime="20230326 14:16:53.840"/>
 </kw>
 <kw name="Verify Desired Item Is Present And Its Quanity" library="verifyAppleIsPresent">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${searchItem}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:40.402" endtime="20230326 01:19:40.846"/>
+<status status="PASS" starttime="20230326 14:16:53.841" endtime="20230326 14:16:54.277"/>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <var>${textofSearchedItem}</var>
 <arg>${searchItem}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230326 01:19:40.929" level="INFO">${textofSearchedItem} = Apple</msg>
-<status status="PASS" starttime="20230326 01:19:40.846" endtime="20230326 01:19:40.929"/>
+<msg timestamp="20230326 14:16:54.299" level="INFO">${textofSearchedItem} = Apple</msg>
+<status status="PASS" starttime="20230326 14:16:54.277" endtime="20230326 14:16:54.299"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${itemname}</arg>
 <arg>${None}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230326 01:19:40.929" endtime="20230326 01:19:40.971"/>
+<status status="PASS" starttime="20230326 14:16:54.299" endtime="20230326 14:16:54.309"/>
 </kw>
 <kw name="Get Element Count" library="Selenium2Library">
 <var>${count}</var>
 <arg>${itemname}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20230326 01:19:40.999" level="INFO">${count} = 2</msg>
-<status status="PASS" starttime="20230326 01:19:40.971" endtime="20230326 01:19:40.999"/>
+<msg timestamp="20230326 14:16:54.314" level="INFO">${count} = 2</msg>
+<status status="PASS" starttime="20230326 14:16:54.309" endtime="20230326 14:16:54.314"/>
 </kw>
 <kw name="Log To Console And Capture Screenshot" library="Resources">
 <arg>There are ${count} ${textofSearchedItem} products in this page.</arg>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${textToAssert}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230326 01:19:40.999" endtime="20230326 01:19:41.000"/>
+<status status="PASS" starttime="20230326 14:16:54.314" endtime="20230326 14:16:54.314"/>
 </kw>
 <kw name="Get Time" library="BuiltIn">
 <var>${time}</var>
 <arg>format=%H:%M:%S:%MS</arg>
 <doc>Returns the given time in the requested format.</doc>
-<msg timestamp="20230326 01:19:41.000" level="INFO">${time} = 2023-03-26 01:19:40</msg>
-<status status="PASS" starttime="20230326 01:19:41.000" endtime="20230326 01:19:41.000"/>
+<msg timestamp="20230326 14:16:54.315" level="INFO">${time} = 2023-03-26 14:16:54</msg>
+<status status="PASS" starttime="20230326 14:16:54.314" endtime="20230326 14:16:54.315"/>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <arg>Screenshot_${time}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230326 01:19:41.105" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot_2023-03-26%2001%3A19%3A40.png"&gt;&lt;img src="Screenshot_2023-03-26%2001%3A19%3A40.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230326 01:19:41.000" endtime="20230326 01:19:41.105"/>
+<msg timestamp="20230326 14:16:54.636" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot_2023-03-26%2014%3A16%3A54.png"&gt;&lt;img src="Screenshot_2023-03-26%2014%3A16%3A54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230326 14:16:54.315" endtime="20230326 14:16:54.636"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:40.999" endtime="20230326 01:19:41.105"/>
+<status status="PASS" starttime="20230326 14:16:54.314" endtime="20230326 14:16:54.636"/>
 </kw>
 <kw name="Element Should Contain" library="Selenium2Library">
 <arg>${itemname}</arg>
 <arg>${textofSearchedItem}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230326 01:19:41.110" level="INFO">Element '//div[@class='item-name']' contains text 'Apple'.</msg>
-<status status="PASS" starttime="20230326 01:19:41.105" endtime="20230326 01:19:41.110"/>
+<msg timestamp="20230326 14:16:54.648" level="INFO">Element '//div[@class='item-name']' contains text 'Apple'.</msg>
+<status status="PASS" starttime="20230326 14:16:54.636" endtime="20230326 14:16:54.648"/>
 </kw>
 <kw name="Log To Console And Capture Screenshot" library="Resources">
 <arg>Only $${textofSearchedItem} Products are available.</arg>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${textToAssert}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230326 01:19:41.111" endtime="20230326 01:19:41.111"/>
+<status status="PASS" starttime="20230326 14:16:54.648" endtime="20230326 14:16:54.648"/>
 </kw>
 <kw name="Get Time" library="BuiltIn">
 <var>${time}</var>
 <arg>format=%H:%M:%S:%MS</arg>
 <doc>Returns the given time in the requested format.</doc>
-<msg timestamp="20230326 01:19:41.111" level="INFO">${time} = 2023-03-26 01:19:41</msg>
-<status status="PASS" starttime="20230326 01:19:41.111" endtime="20230326 01:19:41.111"/>
+<msg timestamp="20230326 14:16:54.649" level="INFO">${time} = 2023-03-26 14:16:54</msg>
+<status status="PASS" starttime="20230326 14:16:54.649" endtime="20230326 14:16:54.649"/>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <arg>Screenshot_${time}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230326 01:19:41.210" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot_2023-03-26%2001%3A19%3A41.png"&gt;&lt;img src="Screenshot_2023-03-26%2001%3A19%3A41.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230326 01:19:41.111" endtime="20230326 01:19:41.210"/>
+<msg timestamp="20230326 14:16:54.905" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot_2023-03-26%2014%3A16%3A54.png"&gt;&lt;img src="Screenshot_2023-03-26%2014%3A16%3A54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230326 14:16:54.649" endtime="20230326 14:16:54.905"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:41.110" endtime="20230326 01:19:41.210"/>
+<status status="PASS" starttime="20230326 14:16:54.648" endtime="20230326 14:16:54.905"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:40.402" endtime="20230326 01:19:41.210"/>
+<status status="PASS" starttime="20230326 14:16:53.840" endtime="20230326 14:16:54.905"/>
 </kw>
 <kw name="Verify Undesired Product Is Not Present" library="verifyAppleIsPresent">
 <arg>Banana</arg>
@@ -933,44 +618,44 @@
 <arg>${itemname}</arg>
 <arg>${undesiredItem}</arg>
 <doc>Verifies that element ``locator`` does not contain text ``expected``.</doc>
-<msg timestamp="20230326 01:19:41.215" level="INFO">Element '//div[@class='item-name']' does not contain text 'Banana'.</msg>
-<status status="PASS" starttime="20230326 01:19:41.211" endtime="20230326 01:19:41.215"/>
+<msg timestamp="20230326 14:16:54.913" level="INFO">Element '//div[@class='item-name']' does not contain text 'Banana'.</msg>
+<status status="PASS" starttime="20230326 14:16:54.905" endtime="20230326 14:16:54.913"/>
 </kw>
 <kw name="Log To Console And Capture Screenshot" library="Resources">
 <arg>"No ${undesiredItem} Products Found".</arg>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${textToAssert}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230326 01:19:41.216" endtime="20230326 01:19:41.216"/>
+<status status="PASS" starttime="20230326 14:16:54.914" endtime="20230326 14:16:54.914"/>
 </kw>
 <kw name="Get Time" library="BuiltIn">
 <var>${time}</var>
 <arg>format=%H:%M:%S:%MS</arg>
 <doc>Returns the given time in the requested format.</doc>
-<msg timestamp="20230326 01:19:41.216" level="INFO">${time} = 2023-03-26 01:19:41</msg>
-<status status="PASS" starttime="20230326 01:19:41.216" endtime="20230326 01:19:41.216"/>
+<msg timestamp="20230326 14:16:54.914" level="INFO">${time} = 2023-03-26 14:16:54</msg>
+<status status="PASS" starttime="20230326 14:16:54.914" endtime="20230326 14:16:54.914"/>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <arg>Screenshot_${time}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230326 01:19:41.320" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot_2023-03-26%2001%3A19%3A41.png"&gt;&lt;img src="Screenshot_2023-03-26%2001%3A19%3A41.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230326 01:19:41.216" endtime="20230326 01:19:41.320"/>
+<msg timestamp="20230326 14:16:55.169" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot_2023-03-26%2014%3A16%3A54.png"&gt;&lt;img src="Screenshot_2023-03-26%2014%3A16%3A54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230326 14:16:54.914" endtime="20230326 14:16:55.169"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:41.216" endtime="20230326 01:19:41.320"/>
+<status status="PASS" starttime="20230326 14:16:54.913" endtime="20230326 14:16:55.169"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:41.211" endtime="20230326 01:19:41.320"/>
+<status status="PASS" starttime="20230326 14:16:54.905" endtime="20230326 14:16:55.169"/>
 </kw>
 <kw name="closeTest" library="Resources" type="TEARDOWN">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230326 01:19:41.321" endtime="20230326 01:19:41.795"/>
+<status status="PASS" starttime="20230326 14:16:55.169" endtime="20230326 14:16:55.242"/>
 </kw>
-<status status="PASS" starttime="20230326 01:19:41.321" endtime="20230326 01:19:41.795"/>
+<status status="PASS" starttime="20230326 14:16:55.169" endtime="20230326 14:16:55.242"/>
 </kw>
 <tag>Salary Hero QA Challenge</tag>
-<status status="PASS" starttime="20230326 01:19:31.340" endtime="20230326 01:19:41.795"/>
+<status status="PASS" starttime="20230326 14:16:44.979" endtime="20230326 14:16:55.242"/>
 </test>
-<status status="FAIL" starttime="20230326 01:18:56.043" endtime="20230326 01:19:41.796"/>
+<status status="FAIL" starttime="20230326 14:16:12.413" endtime="20230326 14:16:55.243"/>
 </suite>
 <statistics>
 <total>
