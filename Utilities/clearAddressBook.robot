@@ -1,8 +1,8 @@
 *** Settings ***
 Library     Selenium2Library
-Resource  ../../Utils/Resources.robot
-Resource  ../../Utils/removeItemsFromBasket.robot
-Resource  ../../Utils/clearData.robot
+Resource  ../../Utilities/Resources.robot
+Resource  ../../Utilities/removeItemsFromBasket.robot
+Resource  ../../Utilities/clearData.robot
 
 
 *** Variables ***

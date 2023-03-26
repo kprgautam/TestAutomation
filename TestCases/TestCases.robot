@@ -1,15 +1,15 @@
 *** Settings ***
 Library     Selenium2Library
-Resource  ../../Utils/Resources.robot
-Resource  ../../Utils/loginWebsite.robot
-Resource  ../../Utils/removeItemsFromBasket.robot
-Resource  ../../Utils/addItemToBasket.robot
-Resource  ../../Utils/address.robot
-Resource  ../../Utils/delivery.robot
-Resource  ../../Utils/clearAddressBook.robot
-Resource  ../../Utils/skipIf.robot
-Resource  ../../Utils/searchForApple.robot
-Resource  ../../Utils/verifyAppleIsPresent.robot
+Resource  ../../Utilities/Resources.robot
+Resource  ../../Utilities/loginWebsite.robot
+Resource  ../../Utilities/removeItemsFromBasket.robot
+Resource  ../../Utilities/addItemToBasket.robot
+Resource  ../../Utilities/address.robot
+Resource  ../../Utilities/delivery.robot
+Resource  ../../Utilities/clearAddressBook.robot
+Resource  ../../Utilities/skipIf.robot
+Resource  ../../Utilities/searchForApple.robot
+Resource  ../../Utilities/verifyAppleIsPresent.robot
 
 
 Test Setup  Resources.startTest                     #Launches browser, opens the website, dismisses couple of elemets

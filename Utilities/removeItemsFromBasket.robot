@@ -1,7 +1,7 @@
 *** Settings ***
 Library     Selenium2Library
-Resource  ../../Utils/Resources.robot
-Resource  ../../Utils/clearData.robot
+Resource  ../../Utilities/Resources.robot
+Resource  ../../Utilities/clearData.robot
 
 
 *** Variables ***

@@ -1,7 +1,7 @@
 *** Settings ***
 Library     Selenium2Library
-Resource  ../../Utils/removeItemsFromBasket.robot
-Resource  ../../Utils/clearAddressBook.robot
+Resource  ../../Utilities/removeItemsFromBasket.robot
+Resource  ../../Utilities/clearAddressBook.robot
 
 *** Variables ***
 ${deleteButton}         //button[@class='mat-focus-indicator mat-icon-button mat-button-base']

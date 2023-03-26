@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
-Resource  ../../Utils/Resources.robot
+Resource  ../../Utilities/Resources.robot
 
 *** Variables ***
 ${itemname}         //div[@class='item-name']
