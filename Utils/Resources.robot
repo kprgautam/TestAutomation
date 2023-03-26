@@ -9,7 +9,6 @@ ${cookieDismiss}        //a[@aria-label='dismiss cookie message']
 ${moveToBasket}         //span[normalize-space()='Your Basket']
 ${headerbutton}         //span[@class='mat-button-wrapper']//span[contains(text(),'OWASP Juice Shop')]
 
-
 *** Keywords ***
 startTest           #Setup
     open browser   ${url}   ${browser}
@@ -37,7 +36,6 @@ Log To Console And Capture Screenshot           #Logs message to console and tak
     LOG TO CONSOLE              ${textToAssert}
     ${time}=        Get Time    format=%H:%M:%S:%MS
     capture page screenshot     /Users/kprgautam/PycharmProjects/TestAutomation/venv/Attachments/Screenshot_${time}.png
-
 
 Move To Cart
     WAIT AND CLICK      ${movetobasket}

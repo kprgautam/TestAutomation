@@ -17,3 +17,5 @@ Open the OWASP Juice Shop web application in your web browser.
 This particular project is written using ROBOT framework, kindly run the project in an IDE with ROBOT framework installed.
 #### Kindly use new login credentials as they expire after every 24 hours.
 #### Please feel free to change the screenshots directory path in "Resource" file as well.
+
+Thanks for reading this, hopefully it helped you in executing this project efficiently.
