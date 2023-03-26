@@ -21,4 +21,5 @@ Login To The Website
     Wait and Click          ${login}
     WAIT UNTIL PAGE CONTAINS ELEMENT            ${basketAssert}
     Log To Console And Capture Screenshot       "Login Successful"
+    log to console          "Let us proceed further."
 
