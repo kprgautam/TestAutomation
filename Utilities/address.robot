@@ -20,6 +20,9 @@ ${Citypath}             //input[@placeholder='Please provide a city.']
 ${Statepath}            //input[@placeholder='Please provide a state.']
 ${SubmitButttonpath}    //button[@id='submitButton']//span[@class='mat-button-wrapper']
 ${assertElement}        //span[normalize-space()='Pay using wallet']
+${selectAddress}        //mat-row[1]//mat-cell[1]
+${continue}             //span[normalize-space()='Continue']
+
 
 *** Keywords ***
 Add New Address
@@ -39,8 +42,8 @@ Add New Address
 
 
 Select Address                                                              #To select the entered address
-    Wait and Click      //mat-row[1]//mat-cell[1]
-    Wait and Click      //span[normalize-space()='Continue']
+    Wait and Click      ${selectAddress}
+    Wait and Click      ${continue}
     page should not contain element  ${assertElement}           #Assert
     Log To Console And Capture Screenshot  "Address Selected Successfully."
 
