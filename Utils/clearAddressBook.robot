@@ -12,17 +12,15 @@ ${savedAddressButton}       (//span[normalize-space()='My saved addresses'])
 ${locatorAddress}           (//*[name()='svg'][@data-icon='trash-alt'])
 ${i}
 ${clickelementAddress}      (//*[name()='svg'][@role='img'])[3]
-${headerbutton}             //span[@class='mat-button-wrapper']//span[contains(text(),'OWASP Juice Shop')]
 
 *** Keywords ***
-Move To Address Book
+Move To Address Book        #To Move to addressbook
          Wait and Click                             ${accountButton}
          Wait and Click                             ${OPButton}
          Wait and Click                             ${savedAddressButton}
          sleep                                      1s
 
-Clear Address Book
+Clear Address Book      #Uses another keyword to check if any addresses are present to be deleted
          Clear Exisitng Data                        ${locatorAddress}      ${clickelementAddress}       ${i}
          wait until page does not contain element   ${locatorAddress}
          Log To Console And Capture Screenshot      "All Addresses Deleted."
-         Wait and Click                             ${headerbutton}

@@ -5,7 +5,7 @@ Library     Selenium2Library
 ${assertElement}    //span[normalize-space()='Pay using wallet']
 
 *** Keywords ***
-Select Delivery
+Select Delivery         #Selects desired delivery
     Wait and Click      //mat-row[1]//mat-cell[1]
     Wait and Click      //span[normalize-space()='Continue']
     page should contain element  ${assertElement}

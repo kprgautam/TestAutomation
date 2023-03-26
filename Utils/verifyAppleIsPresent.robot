@@ -8,15 +8,15 @@ ${searchItem}       (//span[@id='searchValue'])[1]
 
 *** Keywords ***
 Verify Desired Item Is Present And Its Quanity
-    WAIT UNTIL PAGE CONTAINS ELEMENT    ${searchItem}
 
-    ${textofSearchedItem}=    GET TEXT  ${searchItem}
-    WAIT UNTIL PAGE CONTAINS ELEMENT    ${itemname}     ${None}
+    WAIT UNTIL PAGE CONTAINS ELEMENT    ${searchItem}   #Waits for the searched item text
+    ${textofSearchedItem}=    GET TEXT  ${searchItem}   #Gets Text of the searched item
 
-    ${count}    Get Element Count    ${itemname}
-    Log To Console And Capture Screenshot           There are ${count} ${textofSearchedItem} products in this page.
+    WAIT UNTIL PAGE CONTAINS ELEMENT    ${itemname}     #Waits until Item name of the searched product is present
+    ${count}    Get Element Count       ${itemname}     #Gets count of the searched product
+    Log To Console And Capture Screenshot     There are ${count} ${textofSearchedItem} products in this page.
 
-    element should contain            ${itemname}             ${textofSearchedItem}
+    ELEMENT SHOULD CONTAIN           ${itemname}         ${textofSearchedItem} #Checks if searched item contains the items on page
     Log To Console And Capture Screenshot                Only $${textofSearchedItem} Products are available.
 
 

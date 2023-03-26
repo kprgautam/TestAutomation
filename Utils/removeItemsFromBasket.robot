@@ -13,14 +13,11 @@ ${basket}               //span[normalize-space()='Your Basket']
 
 
 *** Keywords ***
-Clear Cart
+Clear Cart              #Uses another keyword to check if any existing cart items are present to be deleted
         sleep                                       0.5s
         Clear Exisitng Data                         ${locator}      ${clickelement}     ${i}
         page should not contain element             ${locator}
         Log To Console And Capture Screenshot       "All Cart Items Deleted."
-        Wait and Click                              ${headerbutton}
-
-
 
 
 

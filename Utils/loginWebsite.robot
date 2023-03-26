@@ -19,7 +19,5 @@ Login To The Website
     Clear and Input         ${emailBox}         ${email}
     Clear and Input         ${passwordBox}      ${password}
     Wait and Click          ${login}
-    WAIT UNTIL PAGE CONTAINS ELEMENT            ${basketAssert}
+    WAIT UNTIL PAGE CONTAINS ELEMENT            ${basketAssert}         #Assert to verify login
     Log To Console And Capture Screenshot       "Login Successful"
-    log to console          "Let us proceed further."
-

@@ -11,13 +11,13 @@ ${headerbutton}         //span[@class='mat-button-wrapper']//span[contains(text(
 
 
 *** Keywords ***
-startTest
+startTest           #Setup
     open browser   ${url}   ${browser}
     maximize browser window
     Wait and Click      ${dismiss}
     Wait and Click      ${cookieDismiss}
 
-closeTest
+closeTest           #Teardown
     close all browsers
 
 Wait and Click
@@ -32,12 +32,11 @@ Clear and Input
     clear element text          ${locator}
     input text                  ${locator}  ${texttoenter}
 
-Log To Console And Capture Screenshot
+Log To Console And Capture Screenshot           #Logs message to console and takes screenshot
     [Arguments]  ${textToAssert}
     LOG TO CONSOLE              ${textToAssert}
     ${time}=        Get Time    format=%H:%M:%S:%MS
     capture page screenshot     Screenshot_${time}.png
-
 
 Move To Cart
     WAIT AND CLICK      ${movetobasket}
