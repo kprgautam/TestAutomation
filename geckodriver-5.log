@@ -1,6 +1,0 @@
-1679483960565	geckodriver	INFO	Listening on 127.0.0.1:62781
-1679483960941	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62782" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/tm/zv6883ds5czfcm00zw3ps2cw0000gn/T/rust_mozprofileyDiub0"
-2023-03-22 18:19:32.126 firefox-bin[25667:1461894] AuthorizationCopyRights failed! NSOSStatusErrorDomain / -60006
-WebDriver BiDi listening on ws://127.0.0.1:62782
-UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
-DevTools listening on ws://127.0.0.1:62782/devtools/browser/fefd9a05-f8d0-4955-adf2-d3b57f821f51
