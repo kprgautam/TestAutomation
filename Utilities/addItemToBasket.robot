@@ -11,8 +11,8 @@ ${numberofItemsInCart}  //button[@class="mat-focus-indicator mat-icon-button mat
 
 *** Keywords ***
 Add Item(s) To Cart
-    [Arguments]             ${numberofitems}            #Pass the number of items to be added
-    WAIT UNTIL PAGE CONTAINS ELEMENT        ${addtobasket}  #Waits for "Add to Basket" to be available
+    [Arguments]             ${numberofitems}                 #Pass the number of items to be added
+    WAIT UNTIL PAGE CONTAINS ELEMENT        ${addtobasket}   #Waits for "Add to Basket" to be available
 
     ${countofAddToBaskets}    get webelements     ${addtobasket}  #Gets the WebElements of "Add to Basket" available
 
@@ -22,8 +22,9 @@ Add Item(s) To Cart
 
     Move To Cart        #Moves to cart
 
-    WAIT UNTIL PAGE CONTAINS ELEMENT            ${numberofItemsInCart}
-    ${numberofCartItems}=   get element count   ${numberofItemsInCart}      #Checks for the number of delete buttons present, which inturn gives the number of items present in the cart
+    #Assert to verify "n" number of items have been actually added to cart
+    WAIT UNTIL ELEMENT IS VISIBLE           ${numberofItemsInCart}
+    ${numberofCartItems}=   get element count   ${numberofItemsInCart}              #Checks for the number of delete buttons present, which inturn gives the number of items present in the cart
     should be equal as numbers      ${numberofCartItems}        ${numberofitems}    #Number of items passed and Number of delete buttons must be same
     Log To Console And Capture Screenshot   "${numberofitems} Item(s) Added Successfully."
 
@@ -32,3 +33,5 @@ Add Item(s) To Cart
     Wait and Click                      ${checkout}
     WAIT UNTIL ELEMENT IS ENABLED         ${assert}
     Log To Console And Capture Screenshot  "Checkout Complete."
+
+

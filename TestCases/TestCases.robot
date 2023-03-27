@@ -2,7 +2,7 @@
 Library     Selenium2Library
 Resource  ../../Utilities/Resources.robot
 Resource  ../../Utilities/loginWebsite.robot
-Resource  ../../Utilities/removeItemsFromBasket.robot
+Resource  ../../Utilities/clearCart.robot
 Resource  ../../Utilities/addItemToBasket.robot
 Resource  ../../Utilities/address.robot
 Resource  ../../Utilities/delivery.robot
