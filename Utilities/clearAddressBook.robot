@@ -4,7 +4,6 @@ Resource  ../../Utilities/Resources.robot
 Resource  ../../Utilities/clearCart.robot
 Resource  ../../Utilities/clearData.robot
 
-
 *** Variables ***
 ${accountButton}            (//span[normalize-space()='Account'])[1]
 ${OPButton}                 //button[@aria-label='Show Orders and Payment Menu']//span[contains(text(),'Orders & Payment')]
