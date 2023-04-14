@@ -2,7 +2,7 @@
 Library     Selenium2Library
 
 *** Variables ***
-${url}                  https://salaryhero-qa-challenge.herokuapp.com/#/
+${url}                  https://juice-shop.herokuapp.com/#/
 ${browser}              chrome
 ${dismiss}              //span[normalize-space()='Dismiss']
 ${cookieDismiss}        //a[@aria-label='dismiss cookie message']
